@@ -1,5 +1,6 @@
 package com.li.advice;
 
+import com.li.support.dto.RestResultDto;
 import com.li.support.exception.ServiceException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,14 +18,14 @@ public class RestExceptionAdvice {
 
     @ExceptionHandler
     @ResponseStatus(HttpStatus.OK)
-    public void errorHandle(HttpServletRequest req, HttpServletResponse rep, Exception ex) {
+    public RestResultDto<String> errorHandle(HttpServletRequest req, HttpServletResponse rep, Exception ex) {
         if (ex instanceof ServiceException) {
             ServiceException e = (ServiceException) ex;
             log.error("自定义异常",ex);
-            //TODO 返回值
+            return RestResultDto.newFail(e.getErrorCode(), ex.getMessage());
         } else {
             log.error("系统异常",ex);
-            //TODO 返回值
+            return RestResultDto.newFail("系统异常", ex.getMessage());
         }
     }
 }

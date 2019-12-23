@@ -1,58 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="搭建model">
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/advice/RestExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/info.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/BlogInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/BlogPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/GroupInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/PictureInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserFriend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBeDeleteModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/ErrorCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/PictureTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/RelationshipEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/UserRoleEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/YesNoEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/SearchFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/dto/RestResultDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/SpringBootControllerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/com/li/SpringBootControllerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/SpringBootDaoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/target/classes/com/li/dao/SpringBootDaoApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/SpringBootDomainApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/target/classes/com/li/domain/SpringBootDomainApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/SpringBootServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/target/classes/com/li/service/SpringBootServiceApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/SpringBootSupportApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/target/classes/com/li/support/SpringBootSupportApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/advice/RestExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/advice/RestExceptionAdvice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +170,7 @@
       <workItem from="1576890991379" duration="15150000" />
       <workItem from="1576983577649" duration="8556000" />
       <workItem from="1577018558581" duration="5907000" />
-      <workItem from="1577065542403" duration="5028000" />
+      <workItem from="1577065542403" duration="7408000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -248,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576506385526</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搭建model">
+      <created>1577071047363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577071047363</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,10 +223,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1577067916561" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577069345681">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577072952302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577069345681" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577072952302" />
     <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576895615801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -276,10 +235,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577019858858" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1577070960715">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1577071042356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577070960715" />
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577071042356" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577067087792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

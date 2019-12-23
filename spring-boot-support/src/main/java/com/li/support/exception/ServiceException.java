@@ -15,4 +15,8 @@ public class ServiceException extends RuntimeException {
         super(errorCode.getValue());
         this.errorCode = errorCode;
     }
+
+    public String getErrorCode() {
+        return this.errorCode.getKey();
+    }
 }
