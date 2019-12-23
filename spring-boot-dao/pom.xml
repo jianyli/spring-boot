@@ -13,12 +13,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.li.domain</groupId>
-            <artifactId>spring-boot-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.li.support</groupId>
             <artifactId>spring-boot-support</artifactId>
             <version>${project.version}</version>

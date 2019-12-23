@@ -18,11 +18,7 @@ public abstract class AbstractBaseModel implements Serializable {
     private Date lastChangeTime;
 
     @Id
-    @GeneratedValue(generator = "idGenerator")
-    @GenericGenerator(
-            name = "idGenerator",
-            strategy = "uuid.hex"
-    )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public String getId() {
         return id;
     }

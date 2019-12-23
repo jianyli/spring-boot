@@ -1,8 +1,10 @@
 package com.li.service;
 
 import com.li.domain.UserInfo;
+import com.li.support.dto.UserInfoDTO;
 
 public interface IUserService {
     void save(UserInfo userInfo);
-    UserInfo findById(String id);
+    void update(UserInfoDTO userInfoDTO);
+    UserInfo findById(Integer id);
 }

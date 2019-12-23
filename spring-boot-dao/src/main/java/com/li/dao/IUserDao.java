@@ -1,8 +1,12 @@
 package com.li.dao;
 
 import com.li.domain.UserInfo;
+import com.li.support.dto.UserInfoDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IUserDao extends JpaRepository<UserInfo, String> {
+public interface IUserDao extends JpaRepository<UserInfo, Integer> {
+
+
+    int update(UserInfoDTO userInfoDTO);
 
 }
