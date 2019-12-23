@@ -1,32 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/com/li/SpringBootControllerApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/target/classes/com/li/dao/SpringBootDaoApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/target/classes/com/li/domain/SpringBootDomainApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-manage/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-schedule/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-schedule/spring-boot-schedule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/target/classes/com/li/service/SpringBootServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/target/classes/com/li/support/SpringBootSupportApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/target/test-classes/com/li/support/SpringBootSupportApplicationTests.class" afterDir="false" />
+    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="搭建model">
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/advice/RestExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/info.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/BlogInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/BlogPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/GroupInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/PictureInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBeDeleteModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/ErrorCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/PictureTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/RelationshipEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/UserRoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/YesNoEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/SearchFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/SpringBootControllerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/com/li/SpringBootControllerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/SpringBootDaoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/target/classes/com/li/dao/SpringBootDaoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/SpringBootDomainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/target/classes/com/li/domain/SpringBootDomainApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/SpringBootServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-service/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-service/target/classes/com/li/service/SpringBootServiceApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/SpringBootSupportApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/target/classes/com/li/support/SpringBootSupportApplication.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -59,7 +99,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1V0BRhAVvV7T714oUEmAjPFlb4J" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -75,11 +117,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dt-fqjd-zb" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.li.support.enums" />
+      <recent name="com.li.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\idea_workspace\spring-boot\spring-boot-controller\src\main\resources" />
     </key>
@@ -87,7 +133,7 @@
   <component name="RunManager" selected="Spring Boot.SpringBootControllerApplication (1)">
     <configuration name="SpringBootControllerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-controller" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.li.SpringBootControllerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.li.ControllerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,7 +212,13 @@
       <updated>1576380125477</updated>
       <workItem from="1576380129897" duration="3317000" />
       <workItem from="1576465448717" duration="4396000" />
-      <workItem from="1576503919266" duration="1173000" />
+      <workItem from="1576503919266" duration="1984000" />
+      <workItem from="1576766516805" duration="2404000" />
+      <workItem from="1576890826074" duration="62000" />
+      <workItem from="1576890991379" duration="15150000" />
+      <workItem from="1576983577649" duration="8556000" />
+      <workItem from="1577018558581" duration="5907000" />
+      <workItem from="1577065542403" duration="5028000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -182,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576469730587</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="上传项目架构">
+      <created>1576506233127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576506233127</updated>
+    </task>
+    <task id="LOCAL-00004" summary="上传项目架构">
+      <created>1576506385526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576506385526</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,65 +256,86 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="上传项目架构" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传项目架构" />
+    <MESSAGE value="搭建model" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建model" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1576506230650">
+    <state x="361" y="71" key="#Assign_Data_Sources" timestamp="1577067916561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576506230650" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1576469905323">
+    <state x="361" y="71" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1577067916561" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577069345681">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576469905323" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577069345681" />
+    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576895615801">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1576895615801" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577019858858">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577019858858" />
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1577070960715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577070960715" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577067087792">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577067087792" />
     <state x="631" y="303" key="Github.ShareDialog" timestamp="1576504444182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="303" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1576504444182" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1577070960779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577070960779" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1577070960779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1576470023932">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577070960779" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1577070960779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576470023932" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577070960779" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1577070960779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577070960779" />
+    <state width="1493" height="216" key="GridCell.Tab.1.bottom" timestamp="1577070960780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577070960780" />
+    <state width="1493" height="216" key="GridCell.Tab.1.center" timestamp="1577070960780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577070960780" />
+    <state width="1493" height="216" key="GridCell.Tab.1.left" timestamp="1577070960779">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1576470023933">
+    <state width="1493" height="216" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577070960779" />
+    <state width="1493" height="216" key="GridCell.Tab.1.right" timestamp="1577070960780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576470023933" />
+    <state width="1493" height="216" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577070960780" />
     <state x="270" y="54" key="SettingsEditor" timestamp="1576504257390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576504257390" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576506404844">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576506404844" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1576466164878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="565" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1576466164878" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576469811413">
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577066791806">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1576469811413" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577066791806" />
     <state x="555" y="203" key="git4idea.merge.GitPullDialog" timestamp="1576468890900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -257,5 +344,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1576380871050" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576920662906">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576920662906" />
   </component>
 </project>

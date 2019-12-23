@@ -1,0 +1,10 @@
+mysqlServer:
+  ip : 106.54.73.45
+  port : 3306
+  name : root
+  password : lijianyou
+
+redisServer:
+  ip: 172.18.0.1
+  port: 6379
+  password: lijianyou
