@@ -13,19 +13,21 @@ import java.util.Date;
 @EntityListeners(AuditingEntityListener.class)
 public abstract class AbstractBaseModel implements Serializable {
 
-    private String id;
+    private Integer id;
     private Date createTime;
     private Date lastChangeTime;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
 
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate

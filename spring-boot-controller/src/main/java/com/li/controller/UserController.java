@@ -52,7 +52,7 @@ public class UserController {
 
     @ApiOperation(value = "更新用户数据")
     @RequestMapping(value = "update", method = {RequestMethod.GET, RequestMethod.POST})
-    public RestResultDto<Boolean> update(@ApiParam(required = true) @RequestParam("id") Integer id,
+    public RestResultDto<Boolean> update(@ApiParam(required = true) @RequestParam("id") String id,
                                          @ApiParam(required = false) @RequestParam("name") String name,
                                          @ApiParam(required = false) @RequestParam("password") String password,
                                          @ApiParam(required = false) @RequestParam("nickName") String nickName,
@@ -60,11 +60,11 @@ public class UserController {
                                          @ApiParam(required = false) @RequestParam("birthTime") @DateTimeFormat(pattern = "yyyy-MM-dd") Date birthTime,
                                          @ApiParam(required = false) @RequestParam("qqNumber") String qqNumber
                                          ) {
-        if (Objects.isNull(id)) {
-            throw new ServiceException(ErrorCodeEnum.NULL);
+        if (StringUtils.isBlank(id) || !StringUtils.isNumeric(id)) {
+            throw new ServiceException(ErrorCodeEnum.ILLEGAL);
         }
         UserInfoDTO userInfoDTO = new UserInfoDTO();
-        userInfoDTO.setId(id);
+        userInfoDTO.setId(Integer.valueOf(id));
         userInfoDTO.setName(name);
         userInfoDTO.setPassword(password);
         userInfoDTO.setNickName(nickName);
@@ -79,10 +79,13 @@ public class UserController {
 
     @ApiOperation(value = "查询user")
     @RequestMapping(value = "findById", method = {RequestMethod.GET, RequestMethod.POST})
-    public UserInfo findById(@ApiParam(required = true) @RequestParam(value = "id") Integer id) {
-        if (Objects.isNull(id)) {
+    public RestResultDto<UserInfoDTO> findById(@ApiParam(required = true) @RequestParam(value = "id") String id) {
+        if (StringUtils.isBlank(id)) {
             throw new RuntimeException("id不能为空");
         }
-        return userService.findById(id);
+        if (!StringUtils.isNumeric(id)) {
+            throw new ServiceException(ErrorCodeEnum.ILLEGAL);
+        }
+        return RestResultDto.newSuccess(userService.findById(Integer.valueOf(id)));
     }
 }

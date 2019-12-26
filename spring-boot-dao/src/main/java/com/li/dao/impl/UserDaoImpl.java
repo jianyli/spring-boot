@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import java.util.List;
 
-@Repository
+
 public class UserDaoImpl extends SimpleJpaRepository<UserInfo, Integer> implements IUserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;

@@ -6,5 +6,5 @@ import com.li.support.dto.UserInfoDTO;
 public interface IUserService {
     void save(UserInfo userInfo);
     void update(UserInfoDTO userInfoDTO);
-    UserInfo findById(Integer id);
+    UserInfoDTO findById(Integer id);
 }

@@ -10,4 +10,10 @@ public class TransformUtil {
         BeanUtils.copyProperties(userInfoDTO, target);
         return target;
     }
+
+    public static UserInfoDTO transform(UserInfo userInfo) {
+        UserInfoDTO target = new UserInfoDTO();
+        BeanUtils.copyProperties(userInfo, target);
+        return target;
+    }
 }
