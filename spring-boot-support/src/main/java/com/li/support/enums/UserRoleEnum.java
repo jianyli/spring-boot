@@ -29,6 +29,18 @@ public enum  UserRoleEnum {
         return null;
     }
 
+    public static String[] getAllKey() {
+        String[] str = new String[size()];
+        int i = 0;
+        for (UserRoleEnum role : UserRoleEnum.values()) {
+            str[i] = role.getKey();
+            i++;
+        }
+        return str;
+    }
+    public static int size() {
+        return UserRoleEnum.values().length;
+    }
     public String getKey() {
         return key;
     }

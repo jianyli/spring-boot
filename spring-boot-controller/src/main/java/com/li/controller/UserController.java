@@ -88,4 +88,21 @@ public class UserController {
         }
         return RestResultDto.newSuccess(userService.findById(Integer.valueOf(id)));
     }
+
+    @ApiOperation(value = "查询user通过姓名或电话号码")
+    @RequestMapping(value = "findUserByNameOrTelephone", method = {RequestMethod.GET, RequestMethod.POST})
+    public RestResultDto<UserInfo> findUserByNameOrTelephone(@ApiParam(required = false) @RequestParam(value = "name") String name,
+                                                             @ApiParam(required = false) @RequestParam(value = "telephone") String telephone) {
+        if (StringUtils.isNotBlank(name) || StringUtils.isNotBlank(telephone)) {
+            throw new ServiceException(ErrorCodeEnum.NULL);
+        }
+
+        return RestResultDto.newSuccess();
+    }
+
+    @ApiOperation(value = "登录测试")
+    @RequestMapping(value = "login", method = {RequestMethod.GET, RequestMethod.POST})
+    public RestResultDto login() {
+        return RestResultDto.newFail("没有登录");
+    }
 }

@@ -11,7 +11,7 @@ public enum ErrorCodeEnum {
 	NO_AUTH("1004", "没有权限"),
 	ILLEGAL_OPERATE("1005", "非法的操作"),
 	NO_USER("1006", "用户不存在"),
-	INVALID_CODE("1007", "无效的登录码"),
+	INVALID_CODE("1007", "尚未登录，请登录"),
 	USED_CODE("1008", "登录码已失效"),
 	LOGIN_TIME_OUT("1009", "请重新登录"),
 	RECORD_EXIST("1010", "记录已存在");

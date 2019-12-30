@@ -47,4 +47,5 @@ public class UserServiceImpl implements IUserService {
 
         return TransformUtil.transform(userInfo);
     }
+
 }

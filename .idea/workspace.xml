@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/mapper/BaseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/CustomFilterInvocationSecurityMetadataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/CustomUrlDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserMapperSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/UserSecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/dto/UserDetailDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/IUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/ErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/ErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/UserRoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/enums/UserRoleEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/util/TransformUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/util/TransformUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -221,7 +221,9 @@
       <workItem from="1577191605936" duration="601000" />
       <workItem from="1577275288768" duration="1681000" />
       <workItem from="1577281876971" duration="7765000" />
-      <workItem from="1577321773907" duration="6736000" />
+      <workItem from="1577321773907" duration="6805000" />
+      <workItem from="1577453681740" duration="602000" />
+      <workItem from="1577685013048" duration="11344000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -279,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577113778019</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="增删改查">
+      <created>1577334812588</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577334812588</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,10 +322,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577283386786" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577325754938">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577697101023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577325754938" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577697101023" />
+    <state x="514" y="271" width="508" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577697038135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="514" y="271" width="508" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1577697038135" />
     <state x="504" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576895615801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -329,50 +342,50 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1577283581936" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1577113774492">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1577334808933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577113774492" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577327883603">
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577334808933" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577685534145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577327883603" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577685534145" />
     <state x="631" y="303" key="Github.ShareDialog" timestamp="1577073892580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="303" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1577073892580" />
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1577698765671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577698765671" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.1.bottom" timestamp="1577325983040">
+    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.1.bottom" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577325983040" />
-    <state width="1493" height="283" key="GridCell.Tab.1.center" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.1.center" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.1.left" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.1.left" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
-    <state width="1493" height="283" key="GridCell.Tab.1.right" timestamp="1577325983039">
+    <state width="1493" height="283" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
+    <state width="1493" height="283" key="GridCell.Tab.1.right" timestamp="1577698765672">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577325983039" />
+    <state width="1493" height="283" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577698765672" />
     <state width="283" height="477" key="HiddenNamespacesPopup" timestamp="1577283403800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -385,10 +398,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576504257390" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1577113784721">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1577334827942">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577113784721" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577334827942" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1576466164878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -397,10 +410,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="427" y="37" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1577283480064" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577334790268">
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577716207749">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577334790268" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577716207749" />
+    <state x="447" y="11" width="642" height="801" key="find.popup" timestamp="1577696209883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="11" width="642" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1577696209883" />
     <state x="555" y="203" key="git4idea.merge.GitPullDialog" timestamp="1576468890900">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -409,9 +426,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577111501335" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577328323881">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1577696227515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577328323881" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1577696227515" />
   </component>
 </project>
