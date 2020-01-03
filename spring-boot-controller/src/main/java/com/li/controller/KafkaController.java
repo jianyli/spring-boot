@@ -1,6 +1,7 @@
 package com.li.controller;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +18,10 @@ public class KafkaController {
     @Resource
     private KafkaTemplate kafkaTemplate;
 
+    @ApiOperation(value = "kafka测试")
     @RequestMapping(value = "send", method = {RequestMethod.GET, RequestMethod.POST})
     public boolean send(@ApiParam(required = true) @RequestParam String message) {
-        kafkaTemplate.send("testTopic", "message");
+        kafkaTemplate.send("testTopic", message);
         return true;
     }
 }

@@ -1,7 +1,6 @@
 package com.li.support.util;
 
 import com.li.domain.UserInfo;
-import com.li.support.dto.UserDetailDTO;
 import com.li.support.dto.UserInfoDTO;
 import org.springframework.beans.BeanUtils;
 
@@ -18,9 +17,4 @@ public class TransformUtil {
         return target;
     }
 
-    public static UserDetailDTO transfer(UserInfo userInfo) {
-        UserDetailDTO target = new UserDetailDTO();
-        BeanUtils.copyProperties(userInfo, target);
-        return target;
-    }
 }

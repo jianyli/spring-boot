@@ -11,9 +11,9 @@ import java.util.Date;
 public class ProducerMessage {
     @Resource
     private KafkaTemplate kafkaTemplate;
-    @Scheduled(fixedRate = 2000)
-    public void send() {
-        kafkaTemplate.send("testTopic", "message:" + new Date());
+
+    public void send(String message) {
+        kafkaTemplate.send("testTopic", "message:" + message);
 
     }
 }

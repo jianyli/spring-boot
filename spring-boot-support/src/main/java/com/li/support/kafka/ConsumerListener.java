@@ -16,10 +16,9 @@ public class ConsumerListener {
     public void onMessage(ConsumerRecord<?,?> record) {
         Optional<?> kafkaMessage = Optional.ofNullable(record);
         if (kafkaMessage.isPresent()) {
-            Object message = kafkaMessage.get();
+            Object message = record.value();
             logger.info("kafka监听到的消息：" + message);
             logger.info("record :" + record);
         }
-
     }
 }
