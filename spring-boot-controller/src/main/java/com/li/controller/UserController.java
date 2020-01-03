@@ -104,7 +104,7 @@ public class UserController {
 
     @ApiOperation(value = "登录测试")
     @RequestMapping(value = "login", method = {RequestMethod.GET, RequestMethod.POST})
-    public RestResultDto<String> login(@ApiParam(required = true) @RequestParam("userName") String userName,
+    public RestResultDto<String> login(@ApiParam(required = true) @RequestParam("username") String userName,
                                @ApiParam(required = true) @RequestParam("password") String password) {
         if (StringUtils.isAnyBlank(userName, password)) {
             throw new ServiceException(ErrorCodeEnum.NULL);
@@ -115,5 +115,11 @@ public class UserController {
         }
 
         return RestResultDto.newSuccess(token);
+    }
+
+    @ApiOperation(value = "测试")
+    @RequestMapping(value = "test", method = {RequestMethod.GET, RequestMethod.POST})
+    public RestResultDto test() {
+        return RestResultDto.newSuccess("测试");
     }
 }

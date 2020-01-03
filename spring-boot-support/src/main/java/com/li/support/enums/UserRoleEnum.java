@@ -2,7 +2,7 @@ package com.li.support.enums;
 
 
 public enum  UserRoleEnum {
-    SUPER_ADMIN("superAdmin","超级管理员"), ADMIN("admin","管理员"), USER("user","普通用户");
+    SUPER_ADMIN("ROLE_SUPERADMIN","超级管理员"), ADMIN("ROLE_ADMIN","管理员"), USER("ROLE_USER","普通用户");
     private String key;
     private String value;
 

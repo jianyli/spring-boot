@@ -21,5 +21,4 @@ public class ControllerApplication {
             logger.info("Spring Boot 使用profile为:{}", profile);
         }
     }
-
 }
