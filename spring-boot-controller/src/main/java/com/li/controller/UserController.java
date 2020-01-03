@@ -8,9 +8,11 @@ import com.li.support.enums.ErrorCodeEnum;
 import com.li.support.enums.UserRoleEnum;
 import com.li.support.enums.YesNoEnum;
 import com.li.support.exception.ServiceException;
+import com.li.support.util.JwtUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
@@ -102,7 +104,16 @@ public class UserController {
 
     @ApiOperation(value = "登录测试")
     @RequestMapping(value = "login", method = {RequestMethod.GET, RequestMethod.POST})
-    public RestResultDto login() {
-        return RestResultDto.newFail("没有登录");
+    public RestResultDto<String> login(@ApiParam(required = true) @RequestParam("userName") String userName,
+                               @ApiParam(required = true) @RequestParam("password") String password) {
+        if (StringUtils.isAnyBlank(userName, password)) {
+            throw new ServiceException(ErrorCodeEnum.NULL);
+        }
+        String token = userService.checkUser(userName, password);
+        if (StringUtils.isBlank(token)) {
+            throw new ServiceException(ErrorCodeEnum.NO_USER);
+        }
+
+        return RestResultDto.newSuccess(token);
     }
 }

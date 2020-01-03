@@ -7,6 +7,9 @@ public interface UserInfoMapper {
     @Select("SELECT * FROM t_user_info WHERE id = #{userId}")
     UserInfo findById(@Param("userId") Integer userId);
 
+    @Select("SELECT * FROM t_user_info WHERE name = #{userName} AND password = #{password}")
+    UserInfo checkUser(@Param("userName") String userName, @Param("password") String password);
+
     @SelectProvider(type = UserMapperSql.class, method = "getUserByNameOrTelephone")
     UserInfo findByNameOrTelephone(String name);
 

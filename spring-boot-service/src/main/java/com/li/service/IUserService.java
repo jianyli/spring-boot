@@ -7,4 +7,5 @@ public interface IUserService {
     void save(UserInfo userInfo);
     void update(UserInfoDTO userInfoDTO);
     UserInfoDTO findById(Integer id);
+    String checkUser(String userName, String password);
 }
