@@ -33,7 +33,7 @@ public class UserController {
     public RestResultDto<Boolean> save(@ApiParam(required = true) @RequestParam("name") String name,
                               @ApiParam(required = true) @RequestParam("password") String password,
                               @ApiParam(required = false) @RequestParam("nickName") String nickName,
-                              @ApiParam(required = false) @RequestParam("telephone") String telephone
+                              @ApiParam(required = true) @RequestParam("telephone") String telephone
                      ) {
         if (StringUtils.isAnyBlank(name, password, nickName, telephone)) {
             throw new ServiceException(ErrorCodeEnum.NULL);

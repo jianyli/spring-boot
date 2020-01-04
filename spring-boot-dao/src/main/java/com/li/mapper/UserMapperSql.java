@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 public class UserMapperSql {
     private static Logger logger = LoggerFactory.getLogger(UserMapperSql.class);
 
-    public String getUserByNameOrTelephone(String name) {
+    public String getUserByName(String name) {
         String sql = new SQL() {{
             SELECT("*");
             FROM("t_user_info");
@@ -20,7 +20,7 @@ public class UserMapperSql {
                 throw new ServiceException(ErrorCodeEnum.NULL);
             }
         }}.toString();
-        logger.info("findUserByNameOrTelephone() sql :" + sql);
+        logger.info("findUserByName查询语句 :" + sql);
         return sql;
     }
 }

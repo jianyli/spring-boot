@@ -10,8 +10,8 @@ public interface UserInfoMapper {
     @Select("SELECT * FROM t_user_info WHERE name = #{userName} AND password = #{password}")
     UserInfo checkUser(@Param("userName") String userName, @Param("password") String password);
 
-    @SelectProvider(type = UserMapperSql.class, method = "getUserByNameOrTelephone")
-    UserInfo findByNameOrTelephone(String name);
+    @SelectProvider(type = UserMapperSql.class, method = "getUserByName")
+    UserInfo findByName(String name);
 
     @Insert("insert into t_user_info (name, password, role, nick_name, birth_time, telephone," +
             " avatar_id, is_group, create_time, been_delete, delete_time, deleter_id, last_change_time, qq_number)" +
