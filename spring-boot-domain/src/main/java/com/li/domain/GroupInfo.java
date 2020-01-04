@@ -13,8 +13,6 @@ public class GroupInfo extends AbstractBeDeleteModel {
     private int userId;
     @Column(name = "name")
     private String name;
-    @Column(name = "friend_number")
-    private int friendNumber;
 
     public int getUserId() {
         return userId;
@@ -30,13 +28,5 @@ public class GroupInfo extends AbstractBeDeleteModel {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getFriendNumber() {
-        return friendNumber;
-    }
-
-    public void setFriendNumber(int friendNumber) {
-        this.friendNumber = friendNumber;
     }
 }

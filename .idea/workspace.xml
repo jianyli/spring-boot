@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/KaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/KaptchaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/Kaptcha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IKaptchaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/KaptchaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/ApplyFriend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/ExamineFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/ExamineInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/GroupInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/GroupInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/UserFriend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/SearchFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryFactoryBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/jpaUtil/data/repository/BaseRepositoryImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578036668351</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="验证码">
+      <created>1578129475191</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578129475191</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,13 +328,15 @@
     <MESSAGE value="搭建model" />
     <MESSAGE value="增删改查" />
     <MESSAGE value="kafka练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="kafka练习" />
+    <MESSAGE value="验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="验证码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#Assign_Data_Sources" timestamp="1577067916561">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="451" y="90" key="#Assign_Data_Sources" timestamp="1578129805456">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="71" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1577067916561" />
+    <state x="451" y="90" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1578129805456" />
     <state x="429" y="84" key="#Custom_Plugin_Repositories" timestamp="1578117223487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -339,11 +349,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577283386786" />
-    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1578121452535">
+    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1578131166403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577697101023" />
-    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578121452535" />
+    <state x="718" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578131166403" />
     <state x="514" y="271" width="508" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577697038135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -361,11 +371,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1577283581936" />
-    <state x="465" y="8" key="CommitChangelistDialog2" timestamp="1578036666002">
+    <state x="465" y="8" key="CommitChangelistDialog2" timestamp="1578129471388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577334808933" />
-    <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578036666002" />
+    <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578129471388" />
     <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1578016592937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -428,11 +438,11 @@
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576504257390" />
     <state x="338" y="68" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578117512640" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1578036685956">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1578129493290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577334827942" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578036685956" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578129493290" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1576466164878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -441,10 +451,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="427" y="37" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1577283480064" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577716207749">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="703" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578129509849">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577716207749" />
+    <state x="703" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578129509849" />
     <state x="559" y="14" width="803" height="1011" key="find.popup" timestamp="1578035500363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

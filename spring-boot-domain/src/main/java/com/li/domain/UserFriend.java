@@ -15,8 +15,8 @@ public class UserFriend extends AbstractBeDeleteModel {
     private int friendId;
     private String relationship;
     @Column(name = "nick_name")
-    private String nickName;
-    @Column(name = "group_id")
+    private String noteName;
+    @Column(name = "note_name")
     private int groupId;
 
     public int getUserId() {
@@ -43,12 +43,12 @@ public class UserFriend extends AbstractBeDeleteModel {
         this.relationship = relationship;
     }
 
-    public String getNickName() {
-        return nickName;
+    public String getNoteName() {
+        return noteName;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setNoteName(String noteName) {
+        this.noteName = noteName;
     }
 
     public int getGroupId() {
