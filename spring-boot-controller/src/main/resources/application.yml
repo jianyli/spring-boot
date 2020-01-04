@@ -40,12 +40,12 @@ spring:
     port: ${redisServer.port}
     password: ${redisServer.password}
     pool:
-
-    jedis:
-      pool:
-        max-idle: 8
-        max-wait:
-        min-idle: 0
+      jedis:
+        pool:
+          max-idle: 8
+          max-wait:
+          min-idle: 0
+    timeout: 5000
 
   jackson:
    date-format: yyyy-MM-dd HH:mm:ss

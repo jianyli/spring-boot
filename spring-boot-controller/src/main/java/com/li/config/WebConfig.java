@@ -9,6 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new JwtInterceptor()).addPathPatterns("/**").excludePathPatterns("/**/login", "/**/swagger-ui.html");
+        registry.addInterceptor(new JwtInterceptor()).addPathPatterns("/h").excludePathPatterns("/**/login", "/**/swagger-ui.html", "/**/register");
     }
 }
