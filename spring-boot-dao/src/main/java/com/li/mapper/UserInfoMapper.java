@@ -4,10 +4,11 @@ import com.li.domain.UserInfo;
 import org.apache.ibatis.annotations.*;
 
 public interface UserInfoMapper {
-    @Select("SELECT * FROM t_user_info WHERE id = #{userId}")
+    final static String BEEN_DELETE = " and been_delete=0";
+    @Select("SELECT * FROM t_user_info WHERE id = #{userId}" + BEEN_DELETE)
     UserInfo findById(@Param("userId") Integer userId);
 
-    @Select("SELECT * FROM t_user_info WHERE name = #{userName} AND password = #{password}")
+    @Select("SELECT * FROM t_user_info WHERE name = #{userName} AND password = #{password}" + BEEN_DELETE)
     UserInfo checkUser(@Param("userName") String userName, @Param("password") String password);
 
     @SelectProvider(type = UserMapperSql.class, method = "getUserByName")

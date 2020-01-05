@@ -9,13 +9,14 @@ import org.slf4j.LoggerFactory;
 
 public class UserMapperSql {
     private static Logger logger = LoggerFactory.getLogger(UserMapperSql.class);
+    final static String BEEN_DELETE = " been_delete=0";
 
     public String getUserByName(String name) {
         String sql = new SQL() {{
             SELECT("*");
             FROM("t_user_info");
             if (StringUtils.isNotBlank(name)) {
-                WHERE("name = #{name}");
+                WHERE("name = #{name}", BEEN_DELETE);
             } else {
                 throw new ServiceException(ErrorCodeEnum.NULL);
             }

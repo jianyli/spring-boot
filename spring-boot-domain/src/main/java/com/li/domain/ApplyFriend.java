@@ -69,4 +69,5 @@ public class ApplyFriend extends AbstractBeDeleteModel {
     public void setResult(String result) {
         this.result = result;
     }
+
 }

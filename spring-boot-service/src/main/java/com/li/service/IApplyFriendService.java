@@ -2,6 +2,6 @@ package com.li.service;
 
 import com.li.domain.ApplyFriend;
 
-public interface ApplyFriendService {
+public interface IApplyFriendService {
     void save(ApplyFriend applyFriend);
 }

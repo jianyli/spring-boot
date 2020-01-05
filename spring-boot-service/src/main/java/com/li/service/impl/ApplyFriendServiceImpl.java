@@ -1,16 +1,32 @@
 package com.li.service.impl;
 
 import com.li.domain.ApplyFriend;
-import com.li.service.ApplyFriendService;
+import com.li.mapper.ApplyFriendMapper;
+import com.li.mapper.GroupInfoMapper;
+import com.li.service.IApplyFriendService;
 import com.li.service.IUserService;
+import com.li.support.dto.UserInfoDTO;
 import com.li.support.enums.ErrorCodeEnum;
 import com.li.support.exception.ServiceException;
 import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Objects;
 
-public class ApplyFriendServiceImpl implements ApplyFriendService {
+@Service
+@Transactional
+public class ApplyFriendServiceImpl implements IApplyFriendService {
+    private Logger logger = LoggerFactory.getLogger(ApplyFriendServiceImpl.class);
+
+    @Resource
+    private ApplyFriendMapper applyMapper;
+    @Resource
+    GroupInfoMapper groupMapper;
     @Resource
     private IUserService userService;
 
@@ -28,9 +44,26 @@ public class ApplyFriendServiceImpl implements ApplyFriendService {
         if (ObjectUtils.isEmpty(userService.findById(applyId))) {
             throw new ServiceException(ErrorCodeEnum.NO_USER);
         }
-        if (ObjectUtils.isEmpty(userService.findById(targetId))) {
+        UserInfoDTO userInfoDTO = userService.findById(targetId);
+        if (ObjectUtils.isEmpty(userInfoDTO)) {
             throw new ServiceException(ErrorCodeEnum.NO_USER);
         }
-        //TODO 好友组id核查
+        //TODO 如果好友已存在，禁止申请
+        if (ObjectUtils.isEmpty(groupMapper.findById(groupId, applyId))) {
+            throw new ServiceException(ErrorCodeEnum.ILLEGAL);
+        }
+        if (StringUtils.isBlank(applyFriend.getNoteName())) {
+            applyFriend.setNoteName(userInfoDTO.getNickName());
+        }
+        Integer id = applyMapper.checkExist(applyId, targetId);
+        if (!Objects.isNull(id)) {  //id不为空，则已存在申请，改修改操作
+            logger.info("申请好友记录已存在，修改id:" + id);
+            applyFriend.setId(id);
+            applyMapper.update(applyFriend);
+        } else {
+            //保存操作
+            applyMapper.save(applyFriend);
+        }
+
     }
 }
