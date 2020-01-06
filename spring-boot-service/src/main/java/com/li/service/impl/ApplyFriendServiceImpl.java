@@ -3,6 +3,7 @@ package com.li.service.impl;
 import com.li.domain.ApplyFriend;
 import com.li.mapper.ApplyFriendMapper;
 import com.li.mapper.GroupInfoMapper;
+import com.li.mapper.UserFriendMapper;
 import com.li.service.IApplyFriendService;
 import com.li.service.IUserService;
 import com.li.support.dto.UserInfoDTO;
@@ -26,7 +27,9 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
     @Resource
     private ApplyFriendMapper applyMapper;
     @Resource
-    GroupInfoMapper groupMapper;
+    private GroupInfoMapper groupMapper;
+    @Resource
+    private UserFriendMapper userFriendMapper;
     @Resource
     private IUserService userService;
 
@@ -48,7 +51,9 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
         if (ObjectUtils.isEmpty(userInfoDTO)) {
             throw new ServiceException(ErrorCodeEnum.NO_USER);
         }
-        //TODO 如果好友已存在，禁止申请
+        if (ObjectUtils.isEmpty(userFriendMapper.findByUserIdAndFriendId(applyId, targetId))) {
+            throw new ServiceException("好友已存在");
+        }
         if (ObjectUtils.isEmpty(groupMapper.findById(groupId, applyId))) {
             throw new ServiceException(ErrorCodeEnum.ILLEGAL);
         }
@@ -64,6 +69,6 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
             //保存操作
             applyMapper.save(applyFriend);
         }
-
+        //TODO 审核通知
     }
 }

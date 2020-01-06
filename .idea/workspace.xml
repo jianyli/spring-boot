@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/GroupMapperSql.java" afterDir="false" />
+    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="好友申请">
+      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserFriendMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/ApplyFriendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/ApplyFriendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/GroupInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/GroupInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserMapperSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserMapperSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/ApplyFriend.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/ApplyFriend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/ApplyFriendService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IApplyFriendService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/ApplyFriendServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/ApplyFriendServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +45,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -219,7 +211,8 @@
       <workItem from="1577453681740" duration="602000" />
       <workItem from="1577685013048" duration="11344000" />
       <workItem from="1578016335319" duration="15299000" />
-      <workItem from="1578186758465" duration="12010000" />
+      <workItem from="1578186758465" duration="13341000" />
+      <workItem from="1578225913614" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -312,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578154474696</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="好友申请">
+      <created>1578204022603</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578204022603</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,10 +380,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="481" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1577283581936" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1578154471935">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1578228054046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578154471935" />
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578228054046" />
     <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578129471388" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1578201113837">
       <screen x="0" y="0" width="1536" height="824" />
@@ -394,45 +394,45 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="303" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1577073892580" />
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637145" />
-    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637144" />
-    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1578205149389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578205149389" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637144" />
-    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637144" />
-    <state width="1493" height="225" key="GridCell.Tab.1.bottom" timestamp="1578203765032">
+    <state width="1493" height="225" key="GridCell.Tab.1.bottom" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578203765032" />
+    <state width="1493" height="225" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637145" />
-    <state width="1493" height="225" key="GridCell.Tab.1.center" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.1.center" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637145" />
-    <state width="1493" height="225" key="GridCell.Tab.1.left" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.1.left" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637145" />
-    <state width="1493" height="225" key="GridCell.Tab.1.right" timestamp="1578203765031">
+    <state width="1493" height="225" key="GridCell.Tab.1.right" timestamp="1578205149390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578203765031" />
+    <state width="1493" height="225" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578205149390" />
     <state width="1877" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578124637145" />
     <state width="283" height="477" key="HiddenNamespacesPopup" timestamp="1577283403800">
       <screen x="0" y="0" width="1536" height="824" />
@@ -464,10 +464,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="427" y="37" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1577283480064" />
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578204007218">
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578228056284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1578204007218" />
+    <state x="562" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1578228056284" />
     <state x="703" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578129509849" />
     <state x="559" y="14" width="803" height="1011" key="find.popup" timestamp="1578035500363">
       <screen x="0" y="0" width="1920" height="1040" />
