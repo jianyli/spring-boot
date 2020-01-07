@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -81,13 +82,17 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
 
     @Override
     public PageDto pageList(Integer applyId, Pageable pageable) {
+        List<ApplyFriendDTO> data;
         String sortField = pageable.getSort().iterator().next().getProperty();
         String sortDirection = pageable.getSort().iterator().next().getDirection().toString();
         int size = pageable.getPageSize();
         int offset = pageable.getPageNumber() * size;
         int total = applyMapper.count(applyId, offset, size);
-        List<ApplyFriendDTO> data = applyMapper.findList(applyId, sortField, sortDirection, offset, size);
-
+        if (total == 0) {
+            data = new ArrayList<>();
+        } else {
+            data = applyMapper.findList(applyId, sortField, sortDirection, offset, size);
+        }
         return new PageDto(total, data);
     }
 }
