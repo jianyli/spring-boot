@@ -58,7 +58,7 @@ spring:
       uri: mongodb://localhost:27017/test
 
 #kafka
-  kafka:
+#  kafka:
     # 指定kafka server的地址，集群配多个，中间，逗号隔开
     bootstrap-servers: 106.54.73.45:9092
     producer:
@@ -93,3 +93,4 @@ mybatis:
   type-aliases-package: com.li.domain
   configuration:
     map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  #打印sql语句

@@ -15,10 +15,10 @@ public class SwaggerConfig {
     @Bean
     public Docket newsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("示例中心V1.0")
+                .groupName("V1.0")
                 .apiInfo(new ApiInfoBuilder()
-                        .title("示例中心V1.0")
-                        .description("示例中心V1.0")
+                        .title("V1.0")
+                        .description("V1.0")
                         .version("1.0.0")
                         .build())
                 .select()

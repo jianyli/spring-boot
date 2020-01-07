@@ -6,6 +6,8 @@ import com.li.mapper.GroupInfoMapper;
 import com.li.mapper.UserFriendMapper;
 import com.li.service.IApplyFriendService;
 import com.li.service.IUserService;
+import com.li.support.dto.ApplyFriendDTO;
+import com.li.support.dto.PageDto;
 import com.li.support.dto.UserInfoDTO;
 import com.li.support.enums.ErrorCodeEnum;
 import com.li.support.exception.ServiceException;
@@ -13,11 +15,16 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -70,5 +77,17 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
             applyMapper.save(applyFriend);
         }
         //TODO 审核通知
+    }
+
+    @Override
+    public PageDto pageList(Integer applyId, Pageable pageable) {
+        String sortField = pageable.getSort().iterator().next().getProperty();
+        String sortDirection = pageable.getSort().iterator().next().getDirection().toString();
+        int size = pageable.getPageSize();
+        int offset = pageable.getPageNumber() * size;
+        int total = applyMapper.count(applyId, offset, size);
+        List<ApplyFriendDTO> data = applyMapper.findList(applyId, sortField, sortDirection, offset, size);
+
+        return new PageDto(total, data);
     }
 }

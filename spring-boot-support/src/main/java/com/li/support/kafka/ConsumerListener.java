@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
-@Component
+//@Component
 public class ConsumerListener {
     private Logger logger = LoggerFactory.getLogger(ConsumerListener.class);
 
