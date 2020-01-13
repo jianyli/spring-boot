@@ -28,13 +28,13 @@ public class ApplyFriendController {
     @Resource
     private IApplyFriendService applyFriendService;
 
-    @ApiOperation(value = "申请")
+    @ApiOperation(value = "保存或更新申请好友信息")
     @RequestMapping(value = "apply", method = {RequestMethod.GET, RequestMethod.POST})
-    public RestResultDto<Boolean> apply(@ApiParam(required = true) @RequestParam("applyId") Integer applyId,
-                                        @ApiParam(required = true) @RequestParam("targetId") Integer targetId,
-                                        @ApiParam(required = false) @RequestParam("noteName") String noteName,
-                                        @ApiParam(required = true) @RequestParam("groupId") Integer groupId,
-                                        @ApiParam(required = false) @RequestParam("reason") String reason) {
+    public RestResultDto<Boolean> apply(@ApiParam(name = "applyId", value = "申请id", required = true) @RequestParam("applyId") Integer applyId,
+                                        @ApiParam(name = "targetId", value = "申请好友的id", required = true) @RequestParam("targetId") Integer targetId,
+                                        @ApiParam(name = "noteName", value = "备注名", required = false) @RequestParam("noteName") String noteName,
+                                        @ApiParam(name = "groupId", value = "分组id", required = true) @RequestParam("groupId") Integer groupId,
+                                        @ApiParam(name = "reason", value = "申请理由", required = false) @RequestParam("reason") String reason) {
         if (applyId == null || targetId == null || groupId == null || applyId==targetId) {
             throw new ServiceException(ErrorCodeEnum.NULL);
         }
@@ -45,7 +45,7 @@ public class ApplyFriendController {
         applyFriend.setGroupId(groupId);
         applyFriend.setReason(reason);
 
-        applyFriendService.save(applyFriend);
+        applyFriendService.saveOrUpdate(applyFriend);
         return RestResultDto.newSuccess(true);
     }
 

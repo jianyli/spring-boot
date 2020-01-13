@@ -5,11 +5,14 @@ import com.li.mapper.ApplyFriendMapper;
 import com.li.mapper.GroupInfoMapper;
 import com.li.mapper.UserFriendMapper;
 import com.li.service.IApplyFriendService;
+import com.li.service.IExamineInfoService;
 import com.li.service.IUserService;
 import com.li.support.dto.ApplyFriendDTO;
+import com.li.support.dto.ExamineInfoDTO;
 import com.li.support.dto.PageDto;
 import com.li.support.dto.UserInfoDTO;
 import com.li.support.enums.ErrorCodeEnum;
+import com.li.support.enums.ExamineTypeEnum;
 import com.li.support.exception.ServiceException;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -20,12 +23,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -40,9 +40,11 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
     private UserFriendMapper userFriendMapper;
     @Resource
     private IUserService userService;
+    @Resource
+    private IExamineInfoService examineInfoService;
 
     @Override
-    public void save(ApplyFriend applyFriend) {
+    public void saveOrUpdate(ApplyFriend applyFriend) {
         if (Objects.isNull(applyFriend)) {
             throw new ServiceException(ErrorCodeEnum.NULL);
         }
@@ -59,7 +61,7 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
         if (ObjectUtils.isEmpty(userInfoDTO)) {
             throw new ServiceException(ErrorCodeEnum.NO_USER);
         }
-        if (ObjectUtils.isEmpty(userFriendMapper.findByUserIdAndFriendId(applyId, targetId))) {
+        if (!ObjectUtils.isEmpty(userFriendMapper.findByUserIdAndFriendId(applyId, targetId))) {
             throw new ServiceException("好友已存在");
         }
         if (ObjectUtils.isEmpty(groupMapper.findById(groupId, applyId))) {
@@ -76,8 +78,15 @@ public class ApplyFriendServiceImpl implements IApplyFriendService {
         } else {
             //保存操作
             applyMapper.save(applyFriend);
+            id = applyMapper.checkExist(applyId, targetId);
         }
-        //TODO 审核通知
+        //保存到审核信息表中
+        ExamineInfoDTO examineInfoDTO = new ExamineInfoDTO();
+        examineInfoDTO.setBusinessId(id);
+        examineInfoDTO.setExamineType(ExamineTypeEnum.FRIEND.getKey());
+        examineInfoDTO.setApplyUserId(applyId);
+        examineInfoDTO.setExaminerIds(targetId + "");
+        examineInfoService.save(examineInfoDTO);
     }
 
     @Override

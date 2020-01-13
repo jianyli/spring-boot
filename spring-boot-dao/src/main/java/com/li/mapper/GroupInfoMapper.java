@@ -9,7 +9,7 @@ public interface GroupInfoMapper {
     final static String BEEN_DELETE = " and been_delete=0";
 
     @Insert("insert into t_group_info (user_id, name, create_time, been_delete,last_change_time)" +
-            " VALUE (#{userId}, #{name}, now(),0,now()});")
+            " VALUE (#{userId}, #{name}, now(),0,now());")
     @SelectKey(statement = "select last_insert_id()", keyProperty = "id",before = false, resultType = int.class)
     int save(GroupInfo groupInfo);
 

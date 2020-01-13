@@ -5,6 +5,6 @@ import com.li.support.dto.PageDto;
 import org.springframework.data.domain.Pageable;
 
 public interface IApplyFriendService {
-    void save(ApplyFriend applyFriend);
+    void saveOrUpdate(ApplyFriend applyFriend);
     PageDto pageList(Integer applyId, Pageable pageable);
 }

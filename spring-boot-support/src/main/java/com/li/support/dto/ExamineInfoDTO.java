@@ -1,10 +1,9 @@
-package com.li.domain;
-
-import com.li.domain.base.AbstractBeDeleteModel;
+package com.li.support.dto;
 
 import java.util.Date;
 
-public class ExamineInfo extends AbstractBeDeleteModel {
+public class ExamineInfoDTO {
+    private Integer id;
     private Integer businessId;
     private String examineType;
     private Integer applyUserId;
@@ -14,6 +13,14 @@ public class ExamineInfo extends AbstractBeDeleteModel {
     private Integer examinerId;//当前审核人id
     private String examinerIds;//全部审核人id
     private String remark;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public Integer getBusinessId() {
         return businessId;
