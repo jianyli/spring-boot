@@ -22,6 +22,7 @@
         <module>spring-boot-support</module>
         <module>spring-boot-domain</module>
         <module>spring-boot-manage</module>
+        <module>spring-boot-test</module>
     </modules>
 
 </project>

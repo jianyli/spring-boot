@@ -12,6 +12,7 @@
         <module name="spring-boot-manage" />
         <module name="spring-boot-controller" />
         <module name="spring-boot-schedule" />
+        <module name="spring-boot-test" />
         <module name="spring-boot-support" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="spring-boot-schedule" options="-parameters" />
       <module name="spring-boot-service" options="-parameters" />
       <module name="spring-boot-support" options="-parameters" />
+      <module name="spring-boot-test" options="-parameters" />
     </option>
   </component>
 </project>
