@@ -4,7 +4,7 @@ spring:
   application:
     name: com.li.controller
   datasource:
-    url: jdbc:mysql://${mysqlServer.ip}:${mysqlServer.port}/spring_boot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowMultiQueries=true
+    url: jdbc:mysql://${mysqlServer.ip}:${mysqlServer.port}/spring_boot?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2b8&allowMultiQueries=true
     username: ${mysqlServer.name}
     password: ${mysqlServer.password}
     driver-class-name: com.mysql.cj.jdbc.Driver

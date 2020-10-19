@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spring-boot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-test/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-test/src/main/java/com/li/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jacob.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/annotation/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/file/JocabTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/util/XWPFUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-test/src/main/java/com/li/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-test/src/main/java/com/li/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
         <option value="Enum" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -74,12 +78,6 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="130" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
-  </component>
   <component name="ProjectId" id="1V0BRhAVvV7T714oUEmAjPFlb4J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -100,12 +98,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jacob.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="E:/vortex/康达运营系统/康达检测智慧运营平台/文件预览服务，fss服务以及测试环境sql数据/文件预览服务，fss服务以及测试环境sql数据/DLL文件（生成PDF服务使用）/jacob-1.18/jacob-1.18/jacob.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.run.dashboard.notification" value="false" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -117,7 +118,7 @@
       <recent name="D:\idea_workspace\spring-boot\spring-boot-controller\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Spring Boot.SpringBootControllerApplication (1)">
     <configuration name="ControllerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.li.ControllerApplication" />
       <module name="spring-boot-controller" />
@@ -264,7 +265,16 @@
       <workItem from="1592182051724" duration="371000" />
       <workItem from="1592182436177" duration="567000" />
       <workItem from="1592215336519" duration="2462000" />
-      <workItem from="1592296204657" duration="247000" />
+      <workItem from="1592296204657" duration="1440000" />
+      <workItem from="1592353887812" duration="2231000" />
+      <workItem from="1592398663430" duration="480000" />
+      <workItem from="1592441261145" duration="21000" />
+      <workItem from="1592530472328" duration="760000" />
+      <workItem from="1592878787408" duration="1606000" />
+      <workItem from="1592896957417" duration="611000" />
+      <workItem from="1593762755247" duration="1643000" />
+      <workItem from="1593838234603" duration="607000" />
+      <workItem from="1603098335253" duration="11314000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -399,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578476669522</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="webSocket">
+      <created>1592296509109</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1592296509109</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,62 +459,67 @@
     <option name="LAST_COMMIT_MESSAGE" value="webSocket" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="94" key="#Project_Structure" timestamp="1592296451021">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1603101692473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592296451021" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592296437999">
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603101692473" />
+    <state x="634" y="260" key="FileChooserDialogImpl" timestamp="1603101682019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592296437999" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1592223334764">
+    <state x="634" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603101682019" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1603113555100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113555100" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1603113555099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113555099" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1603113555099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113555099" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1603113555100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113555100" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603113611514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113611514" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1603113611514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113611514" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1603113611514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1592223334764">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113611514" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1603113611514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592223334764" />
-    <state x="576" y="274" key="SettingsEditor" timestamp="1592034656359">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603113611514" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603114535079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="576" y="274" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592034656359" />
-    <state x="334" y="130" key="new project wizard" timestamp="1592222788050">
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603114535079" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1603111506011">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="130" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592222788050" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603111506011" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/spring-boot-test/src/main/java/com/li/Test.java</url>
-          <line>17</line>
+          <url>file://$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/file/JocabTestController.java</url>
+          <line>33</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/file/JocabTestController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

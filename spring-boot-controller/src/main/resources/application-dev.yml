@@ -2,7 +2,7 @@ mysqlServer:
   ip : 106.54.73.45
   port : 3306
   name : root
-  password : lijianyou
+  password : 1234
 
 redisServer:
   ip: 106.54.73.45
