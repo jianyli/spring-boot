@@ -17,6 +17,8 @@ public abstract class AbstractBaseModel implements Serializable {
     private Date createTime;
     private Date lastChangeTime;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Integer getId() {
         return id;
     }
@@ -25,13 +27,9 @@ public abstract class AbstractBaseModel implements Serializable {
         this.id = id;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-
     @Temporal(TemporalType.TIMESTAMP)
     @CreatedDate
-    @Column(name = "createTime", updatable = false)
+    @Column(name = "createTime")
     public Date getCreateTime() {
         return createTime;
     }

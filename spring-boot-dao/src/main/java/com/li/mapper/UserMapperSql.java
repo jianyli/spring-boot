@@ -3,6 +3,7 @@ package com.li.mapper;
 import com.li.support.enums.ErrorCodeEnum;
 import com.li.support.exception.ServiceException;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.jdbc.SQL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

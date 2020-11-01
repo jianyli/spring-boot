@@ -2,6 +2,7 @@ package com.li.mapper;
 
 import com.li.domain.GroupInfo;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.SelectKey;
 

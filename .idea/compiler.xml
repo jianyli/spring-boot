@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-dao" />
-        <module name="spring-boot-domain" />
-        <module name="spring-boot-service" />
-        <module name="spring-boot-manage" />
         <module name="spring-boot-controller" />
         <module name="spring-boot-schedule" />
-        <module name="spring-boot-test" />
+        <module name="spring-boot-service" />
+        <module name="spring-boot-dao" />
+        <module name="spring-boot-manage" />
         <module name="spring-boot-support" />
+        <module name="spring-boot-test" />
+        <module name="spring-boot-domain" />
       </profile>
     </annotationProcessing>
   </component>

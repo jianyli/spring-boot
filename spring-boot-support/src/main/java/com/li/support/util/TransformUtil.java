@@ -1,8 +1,10 @@
 package com.li.support.util;
 
 import com.li.domain.ExamineInfo;
+import com.li.domain.Student;
 import com.li.domain.UserInfo;
 import com.li.support.dto.ExamineInfoDTO;
+import com.li.support.dto.StudentDto;
 import com.li.support.dto.UserInfoDTO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.context.annotation.Bean;
@@ -26,4 +28,9 @@ public class TransformUtil {
         return target;
     }
 
+    public static StudentDto transform(Student source) {
+        StudentDto target = new StudentDto();
+        BeanUtils.copyProperties(source, target);
+        return target;
+    }
 }

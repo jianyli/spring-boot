@@ -4,6 +4,7 @@ import com.li.domain.ApplyFriend;
 import com.li.domain.GroupInfo;
 import com.li.support.dto.ApplyFriendDTO;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.UpdateProvider;
 

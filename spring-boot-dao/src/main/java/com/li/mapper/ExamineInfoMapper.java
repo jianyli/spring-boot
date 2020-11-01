@@ -2,6 +2,7 @@ package com.li.mapper;
 
 import com.li.domain.ExamineInfo;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 public interface ExamineInfoMapper {

@@ -3,6 +3,7 @@ package com.li.mapper;
 import com.li.domain.ApplyFriend;
 import com.li.domain.GroupInfo;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.jdbc.SQL;
 
 public class ApplyFriendSql {

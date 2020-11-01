@@ -5,9 +5,9 @@ mysqlServer:
   password : 1234
 
 redisServer:
-  ip: 106.54.73.45
+  ip: 127.0.0.1
   port: 6379
-  password: lijianyou
+  password:
 
 # 验证码失效时间
 kaptcha.timeout : 1000

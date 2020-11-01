@@ -10,20 +10,20 @@ import java.util.Date;
 public abstract class AbstractBeDeleteModel extends AbstractBaseModel {
     public static final Integer DELETE = 1;
     public static final Integer NO_DELETE = 0;
-    private Integer beenDelete;
+    private Integer beenDeleted;
     private Date deleteTime;
 
     public AbstractBeDeleteModel() {
-        this.beenDelete = NO_DELETE;
+        this.beenDeleted = NO_DELETE;
     }
 
-    @Column(name = "beenDelete")
-    public Integer getBeenDelete() {
-        return beenDelete;
+    @Column(name = "been_deleted")
+    public Integer getBeenDeleted() {
+        return beenDeleted;
     }
 
-    public void setBeenDelete(Integer beenDelete) {
-        this.beenDelete = beenDelete;
+    public void setBeenDeleted(Integer beenDeleted) {
+        this.beenDeleted = beenDeleted;
     }
 
     @Temporal(TemporalType.TIMESTAMP)
