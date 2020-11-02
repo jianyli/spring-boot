@@ -43,34 +43,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/mybatis/mapper/Student.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/mybatis/mybatisConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-service/src/main/java/com/li/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/dto/StudentDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="65fbc18d-da60-4d2f-811c-ce6e895f9f8e" name="Default Changelist" comment="mybatis，redis cache">
+      <change afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/controller/EmailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/java/com/li/ControllerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-controller/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ApplyFriendSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ExamineFlowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ExamineFlowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ExamineInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/ExamineInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/GroupInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/GroupInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserFriendMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserFriendMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserMapperSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dao/src/main/java/com/li/mapper/UserMapperSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBaseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBeDeleteModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-domain/src/main/java/com/li/domain/base/AbstractBeDeleteModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/util/TransformUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-support/src/main/java/com/li/support/util/TransformUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +145,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="ReactorSettings">
@@ -208,17 +187,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -345,7 +313,9 @@
       <workItem from="1592182436177" duration="567000" />
       <workItem from="1592215336519" duration="2462000" />
       <workItem from="1592296204657" duration="247000" />
-      <workItem from="1604209890800" duration="20082000" />
+      <workItem from="1604209890800" duration="20424000" />
+      <workItem from="1604327203488" duration="2814000" />
+      <workItem from="1604360497801" duration="67000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目架构">
       <created>1576469574247</created>
@@ -480,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578476669522</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="mybatis，redis cache">
+      <created>1604248409549</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1604248409549</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +497,8 @@
     <MESSAGE value="验证码" />
     <MESSAGE value="好友申请" />
     <MESSAGE value="webSocket" />
-    <option name="LAST_COMMIT_MESSAGE" value="webSocket" />
+    <MESSAGE value="mybatis，redis cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis，redis cache" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1604209974204">
@@ -535,58 +513,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603211517399" />
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1604248018225">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom" timestamp="1604331471982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018225" />
-    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1604248018224">
+    <state width="1877" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471982" />
+    <state width="1877" height="335" key="GridCell.Tab.0.center" timestamp="1604331471982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018224" />
-    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1604248018224">
+    <state width="1877" height="335" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471982" />
+    <state width="1877" height="335" key="GridCell.Tab.0.left" timestamp="1604331471982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018224" />
-    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1604248018225">
+    <state width="1877" height="335" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471982" />
+    <state width="1877" height="335" key="GridCell.Tab.0.right" timestamp="1604331471982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018225" />
-    <state width="1877" height="335" key="GridCell.Tab.1.bottom" timestamp="1604248018227">
+    <state width="1877" height="335" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471982" />
+    <state width="1877" height="335" key="GridCell.Tab.1.bottom" timestamp="1604331471976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018227" />
-    <state width="1877" height="335" key="GridCell.Tab.1.center" timestamp="1604248018226">
+    <state width="1877" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471976" />
+    <state width="1877" height="335" key="GridCell.Tab.1.center" timestamp="1604331471976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018226" />
-    <state width="1877" height="335" key="GridCell.Tab.1.left" timestamp="1604248018225">
+    <state width="1877" height="335" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471976" />
+    <state width="1877" height="335" key="GridCell.Tab.1.left" timestamp="1604331471976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018225" />
-    <state width="1877" height="335" key="GridCell.Tab.1.right" timestamp="1604248018226">
+    <state width="1877" height="335" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471976" />
+    <state width="1877" height="335" key="GridCell.Tab.1.right" timestamp="1604331471976">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="335" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604248018226" />
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1604247855958">
+    <state width="1877" height="335" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604331471976" />
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom" timestamp="1604248709127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604247855958" />
-    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1604247855957">
+    <state width="1877" height="348" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604248709127" />
+    <state width="1877" height="348" key="GridCell.Tab.2.center" timestamp="1604248709127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604247855957" />
-    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1604247855957">
+    <state width="1877" height="348" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604248709127" />
+    <state width="1877" height="348" key="GridCell.Tab.2.left" timestamp="1604248709126">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604247855957" />
-    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1604247855957">
+    <state width="1877" height="348" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604248709126" />
+    <state width="1877" height="348" key="GridCell.Tab.2.right" timestamp="1604248709127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604247855957" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1604216516983">
+    <state width="1877" height="348" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604248709127" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604360569357">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604216516982" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604360569357" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604248577783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604248577783" />
     <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604225746900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
