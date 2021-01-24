@@ -1,5 +1,5 @@
 mysqlServer:
-  ip : 106.54.73.45
+  ip : 127.0.0.1
   port : 3306
   name : root
   password : 1234

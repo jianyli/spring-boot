@@ -1,5 +1,13 @@
 package com.li.support.util;
 
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.PageSize;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfImportedPage;
+import com.itextpdf.text.pdf.PdfReader;
+import com.itextpdf.text.pdf.PdfWriter;
 import com.jacob.activeX.ActiveXComponent;
 import com.jacob.com.ComThread;
 import com.jacob.com.Dispatch;
@@ -7,6 +15,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -44,5 +56,27 @@ public class XWPFUtil {
             }
         }
         ComThread.Release();
+    }
+
+    public static void mergePdf(File outFile, List<String> pdfPath) throws Exception {
+        Document document = new Document();
+        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(outFile));
+        Rectangle rect = new Rectangle(36, 54, 559, 788);
+        rect.setBorderColor(BaseColor.BLACK);
+        rect = PageSize.A4;
+        writer.setBoxSize("art", rect);
+        document.open();
+        PdfContentByte cb = writer.getDirectContent();
+        for (String s : pdfPath) {
+            PdfReader reader = new PdfReader(s);
+            Integer pageNumber = reader.getNumberOfPages();
+            for (int i = 1; i <= pageNumber; i++) {
+                document.newPage();
+                document.setPageSize(PageSize.A4);
+                PdfImportedPage page = writer.getImportedPage(reader, i);
+                cb.addTemplate(page,0,0);
+            }
+        }
+        document.close();
     }
 }

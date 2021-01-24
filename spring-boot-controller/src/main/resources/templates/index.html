@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1 th:text="message">hello world</h1>
+    <span th:text="'欢迎，' + ${username}"></span>
+    <span th:text="|欢迎，${username1}|"></span>
+    <a th:if="${flag == 'yes'}" th:href="@{http://www.baidu.com}">home</a>
+    <br/>
+    <a th:unless="${flag != 'no'}" th:href="@{http://www.baidu.com}">house</a>
+    <br/>
+    <h1>for循环</h1>
+    <table>
+        <tr th:each="student,indexs : ${students}">
+            <td th:text="${indexs.index}">序号</td>
+            <td th:text="${student.name}">姓名</td>
+            <td th:text="${student.sex}">性别</td>
+        </tr>
+    </table>
+
+    <input th:value="${age gt 30 ? '中年' : '少年'}"/>
+
+    <div th:inline="text">
+        <p>hello,[[${username}]]</p>
+    </div>
+    <ul>
+        <li th:each="book : ${books}"></li>
+    </ul>
+    <div>
+        <p th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></p>
+    </div>
+
+    <div th:insert="layout/copyright::copyright"></div>
+    <script th:inline="javascript">
+        var name = [[${username1}]] + ',欢迎!';
+        alert(name);
+    </script>
+</div>
+</body>
+</html>

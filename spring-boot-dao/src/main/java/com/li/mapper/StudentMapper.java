@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 @Mapper
-public interface StudentMapper {
+public interface  StudentMapper {
     Student findById(Long studentNo);
 
     void save(Student student);

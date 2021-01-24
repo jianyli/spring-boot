@@ -2,7 +2,7 @@ package com.li.support.dto;
 
 import java.util.Date;
 
-public class RestResultDto<T> {
+public class  RestResultDto<T> {
     private static final Integer RESULT_SUCC = 0;
     private static final Integer RESULT_FAIL = 1;
 
