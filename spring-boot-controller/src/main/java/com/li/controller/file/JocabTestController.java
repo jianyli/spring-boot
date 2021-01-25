@@ -23,7 +23,7 @@ import java.net.URLEncoder;
  */
 @Api(tags = "Jocab测试接口")
 @RestController
-@RequestMapping(name = "file", method = {RequestMethod.GET, RequestMethod.POST})
+@RequestMapping("file")
 public class JocabTestController {
 
     @ApiOperation(value = "产生pdf")
@@ -33,12 +33,11 @@ public class JocabTestController {
             throw new ServiceException("参数缺失");
         }
         String path = this.getClass().getClassLoader().getResource("file/test.docx").getPath();
-        File pdfTemp = new File(fileName + ".pdf");
-        XWPFUtil.wordToPdf(path, pdfTemp.getPath());
+        File pdfTemp = XWPFUtil.wordToPdf(path, fileName);
         try {
             String filename = URLEncoder.encode(fileName + ".pdf", "utf-8");
             response.reset();
-            response.addHeader("Content-Disposition","attachment;filename=" + fileName);
+            response.addHeader("Content-Disposition","attachment;filename=" + fileName + ".pdf");
             OutputStream outputStream = response.getOutputStream();
             InputStream inputStream = new FileInputStream(pdfTemp);
             FileCopyUtils.copy(inputStream, outputStream);

@@ -34,20 +34,19 @@ public class XWPFUtil {
     public static final int wdFormatPDF = 17;
 
     private static Logger logger = LoggerFactory.getLogger(XWPFUtil.class);
-    public static void wordToPdf(String source, String target) {
+    public static File wordToPdf(String source, String target) {
         ComThread.InitSTA();
         ActiveXComponent app = null;
+        File file = null;
         try {
             app = new ActiveXComponent("Word.Application");
             app.setProperty("Visible", false);
             Dispatch documents = app.getProperty("Documents").toDispatch();
-            Dispatch doc = Dispatch.call(documents,"Open", target, false, true).toDispatch();
-            File file = new File(target);
-            if (file.exists()) {
-                file.delete();
-            }
+            Dispatch doc = Dispatch.call(documents,"Open", source, false, true).toDispatch();
+            file = FileUtil.createTempFile(target,".pdf");
             Dispatch.call(doc,"SaveAs",target, wdFormatPDF);
             Dispatch.call(doc,"Close",false);
+            return file;
         } catch (Exception e) {
             logger.info("word转pdf出错", e);
         } finally {
@@ -56,6 +55,7 @@ public class XWPFUtil {
             }
         }
         ComThread.Release();
+        return file;
     }
 
     public static void mergePdf(File outFile, List<String> pdfPath) throws Exception {
